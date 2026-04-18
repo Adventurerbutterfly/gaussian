@@ -1,0 +1,264 @@
+=== 1. 4-aminobenzoic_acid ===
+A_gas_source: orig_main
+A_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/gas/4876__4-Aminobenzoic_acid_base__Aminus_gas.log
+A_smd_source: orig_main
+A_smd_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/smd/4876__4-Aminobenzoic_acid_base__Aminus_smd_water.log
+HA_gas_source: reopt_main
+HA_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_HA/gas/978__4-Aminobenzoic_acid__HA_gas.log
+HA_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/smd/978__4-Aminobenzoic_acid__HA_smd_water.log
+HA_smd_try1_reason: imaginary_frequency
+HA_smd_try1_source: orig_main
+HA_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_HA/smd/978__4-Aminobenzoic_acid__HA_smd_water.log
+HA_smd_try2_reason: missing
+HA_smd_try2_source: reopt_main
+cid_A: 4876
+cid_HA: 978
+mol_key: 4-aminobenzoic_acid
+name: 4-aminobenzoic_acid
+pKa_ref_title: 2.38
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 2. acetic_acid ===
+A_gas_source: orig_main
+A_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/gas/175__Acetic_acid_base__Aminus_gas.log
+A_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/smd/175__Acetic_acid_base__Aminus_smd_water.log
+A_smd_try1_reason: imaginary_frequency
+A_smd_try1_source: orig_main
+A_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/reopt_inputs/gaussian_Aminus/smd/175__Acetic_acid_base__Aminus_smd_water.log
+A_smd_try2_reason: no_normal_termination
+A_smd_try2_source: orig_retry_freqonly
+A_smd_try3_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/smd/175__Acetic_acid_base__Aminus_smd_water.log
+A_smd_try3_reason: imaginary_frequency
+A_smd_try3_source: reopt_main
+HA_gas_source: orig_main
+HA_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/gas/176__Acetic_acid__HA_gas.log
+HA_smd_source: orig_main
+HA_smd_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/smd/176__Acetic_acid__HA_smd_water.log
+cid_A: 175
+cid_HA: 176
+mol_key: acetic_acid
+name: acetic_acid
+pKa_ref_title: 4.7
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 3. citric_acid ===
+A_gas_source: orig_retry_freqonly
+A_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_Aminus/gas/4342083__Citric_acid_base__Aminus_gas.log
+A_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/smd/4342083__Citric_acid_base__Aminus_smd_water.log
+A_smd_try1_reason: no_frequency_block
+A_smd_try1_source: orig_main
+A_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/smd/4342083__Citric_acid_base__Aminus_smd_water.log
+A_smd_try2_reason: missing
+A_smd_try2_source: reopt_main
+HA_gas_source: orig_main
+HA_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/gas/311__Citric_acid__HA_gas.log
+HA_smd_source: orig_main
+HA_smd_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/smd/311__Citric_acid__HA_smd_water.log
+cid_A: 4342083
+cid_HA: 311
+mol_key: citric_acid
+name: citric_acid
+pKa_ref_title: 2.7
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 4. heptanoic_acid ===
+A_gas_source: orig_main
+A_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/gas/93052__Heptanoic_acid_base__Aminus_gas.log
+A_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/smd/93052__Heptanoic_acid_base__Aminus_smd_water.log
+A_smd_try1_reason: no_normal_termination
+A_smd_try1_source: orig_main
+A_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_Aminus/smd/93052__Heptanoic_acid_base__Aminus_smd_water.log
+A_smd_try2_reason: imaginary_frequency
+A_smd_try2_source: orig_retry_freqonly
+A_smd_try3_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/smd/93052__Heptanoic_acid_base__Aminus_smd_water.log
+A_smd_try3_reason: missing
+A_smd_try3_source: reopt_main
+HA_gas_source: orig_main
+HA_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/gas/8094__Heptanoic_acid__HA_gas.log
+HA_smd_source: orig_main
+HA_smd_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/smd/8094__Heptanoic_acid__HA_smd_water.log
+cid_A: 93052
+cid_HA: 8094
+mol_key: heptanoic_acid
+name: heptanoic_acid
+pKa_ref_title: 4.4
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 5. ibuprofen ===
+A_gas_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/gas/3326923__Ibuprofen_base__Aminus_gas.log
+A_gas_try1_reason: no_normal_termination
+A_gas_try1_source: orig_main
+A_gas_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_Aminus/gas/3326923__Ibuprofen_base__Aminus_gas.log
+A_gas_try2_reason: imaginary_frequency
+A_gas_try2_source: orig_retry_freqonly
+A_gas_try3_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/gas/3326923__Ibuprofen_base__Aminus_gas.log
+A_gas_try3_reason: missing
+A_gas_try3_source: reopt_main
+A_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/smd/3326923__Ibuprofen_base__Aminus_smd_water.log
+A_smd_try1_reason: no_normal_termination
+A_smd_try1_source: orig_main
+A_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_Aminus/smd/3326923__Ibuprofen_base__Aminus_smd_water.log
+A_smd_try2_reason: imaginary_frequency
+A_smd_try2_source: orig_retry_freqonly
+A_smd_try3_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/smd/3326923__Ibuprofen_base__Aminus_smd_water.log
+A_smd_try3_reason: missing
+A_smd_try3_source: reopt_main
+HA_gas_source: orig_retry_freqonly
+HA_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_HA/gas/3672__Ibuprofen__HA_gas.log
+HA_smd_source: orig_retry_freqonly
+HA_smd_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_HA/smd/3672__Ibuprofen__HA_smd_water.log
+cid_A: 3326923
+cid_HA: 3672
+mol_key: ibuprofen
+name: ibuprofen
+pKa_ref_title: 5.2
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 6. lauric_acid ===
+A_gas_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/gas/4149208__Lauric_acid_base__Aminus_gas.log
+A_gas_try1_reason: no_frequency_block
+A_gas_try1_source: orig_main
+A_gas_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/gas/4149208__Lauric_acid_base__Aminus_gas.log
+A_gas_try2_reason: missing
+A_gas_try2_source: reopt_main
+A_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/smd/4149208__Lauric_acid_base__Aminus_smd_water.log
+A_smd_try1_reason: no_frequency_block
+A_smd_try1_source: orig_main
+A_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/smd/4149208__Lauric_acid_base__Aminus_smd_water.log
+A_smd_try2_reason: missing
+A_smd_try2_source: reopt_main
+HA_gas_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/gas/3893__Lauric_acid__HA_gas.log
+HA_gas_try1_reason: no_frequency_block
+HA_gas_try1_source: orig_main
+HA_gas_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_HA/gas/3893__Lauric_acid__HA_gas.log
+HA_gas_try2_reason: missing
+HA_gas_try2_source: reopt_main
+HA_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/smd/3893__Lauric_acid__HA_smd_water.log
+HA_smd_try1_reason: no_frequency_block
+HA_smd_try1_source: orig_main
+HA_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_HA/smd/3893__Lauric_acid__HA_smd_water.log
+HA_smd_try2_reason: missing
+HA_smd_try2_source: reopt_main
+cid_A: 4149208
+cid_HA: 3893
+mol_key: lauric_acid
+name: lauric_acid
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 7. malonic_acid ===
+A_gas_source: orig_main
+A_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/gas/3748644__Malonic_acid_base__Aminus_gas.log
+A_smd_source: orig_retry_freqonly
+A_smd_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_Aminus/smd/3748644__Malonic_acid_base__Aminus_smd_water.log
+HA_gas_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/gas/867__Malonic_acid__HA_gas.log
+HA_gas_try1_reason: imaginary_frequency
+HA_gas_try1_source: orig_main
+HA_gas_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_HA/gas/867__Malonic_acid__HA_gas.log
+HA_gas_try2_reason: missing
+HA_gas_try2_source: reopt_main
+HA_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/smd/867__Malonic_acid__HA_smd_water.log
+HA_smd_try1_reason: imaginary_frequency
+HA_smd_try1_source: orig_main
+HA_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_HA/smd/867__Malonic_acid__HA_smd_water.log
+HA_smd_try2_reason: no_normal_termination
+HA_smd_try2_source: reopt_main
+cid_A: 3748644
+cid_HA: 867
+mol_key: malonic_acid
+name: malonic_acid
+pKa_ref_title: 2.8
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 8. myristic_acid ===
+A_gas_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/gas/4075158__Myristic_acid_base__Aminus_gas.log
+A_gas_try1_reason: no_frequency_block
+A_gas_try1_source: orig_main
+A_gas_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/gas/4075158__Myristic_acid_base__Aminus_gas.log
+A_gas_try2_reason: missing
+A_gas_try2_source: reopt_main
+A_smd_source: orig_retry_freqonly
+A_smd_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_Aminus/smd/4075158__Myristic_acid_base__Aminus_smd_water.log
+HA_gas_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/gas/11005__Myristic_acid__HA_gas.log
+HA_gas_try1_reason: no_frequency_block
+HA_gas_try1_source: orig_main
+HA_gas_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_HA/gas/11005__Myristic_acid__HA_gas.log
+HA_gas_try2_reason: missing
+HA_gas_try2_source: reopt_main
+HA_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/smd/11005__Myristic_acid__HA_smd_water.log
+HA_smd_try1_reason: no_frequency_block
+HA_smd_try1_source: orig_main
+HA_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_HA/smd/11005__Myristic_acid__HA_smd_water.log
+HA_smd_try2_reason: missing
+HA_smd_try2_source: reopt_main
+cid_A: 4075158
+cid_HA: 11005
+mol_key: myristic_acid
+name: myristic_acid
+pKa_ref_title: 4.9
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 9. test_min.log ===
+A_gas_try1_reason: role_missing_from_index
+A_gas_try1_source: index
+A_smd_try1_reason: role_missing_from_index
+A_smd_try1_source: index
+HA_gas_try1_reason: role_missing_from_index
+HA_gas_try1_source: index
+HA_smd_try1_reason: role_missing_from_index
+HA_smd_try1_source: index
+mol_key: test_min.log
+name: test_min.log
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
+
+=== 10. valeric_acid ===
+A_gas_source: orig_main
+A_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/gas/114781__Valeric_acid_base__Aminus_gas.log
+A_smd_try1_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_Aminus/smd/114781__Valeric_acid_base__Aminus_smd_water.log
+A_smd_try1_reason: no_normal_termination
+A_smd_try1_source: orig_main
+A_smd_try2_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/retry_inputs/freqonly/gaussian_Aminus/smd/114781__Valeric_acid_base__Aminus_smd_water.log
+A_smd_try2_reason: imaginary_frequency
+A_smd_try2_source: orig_retry_freqonly
+A_smd_try3_path: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/reopt_inputs/gaussian_Aminus/smd/114781__Valeric_acid_base__Aminus_smd_water.log
+A_smd_try3_reason: missing
+A_smd_try3_source: reopt_main
+HA_gas_source: orig_main
+HA_gas_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/gas/7991__Valeric_acid__HA_gas.log
+HA_smd_source: orig_main
+HA_smd_used: /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem/gaussian_HA/smd/7991__Valeric_acid__HA_smd_water.log
+cid_A: 114781
+cid_HA: 7991
+mol_key: valeric_acid
+name: valeric_acid
+pKa_ref_title: 4.0
+proton_aq_free_energy_kcal: -272.17999999999995
+proton_gas_free_energy_kcal: -6.28
+proton_solvation_free_energy_kcal: -265.9
+reason: no method could be computed
