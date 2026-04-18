@@ -1,0 +1,7 @@
+#Imaginary (NImag > 0) olan logları listele
+grep -R --include="*.log" -n "NImag=" gaussian_HA gaussian_Aminus gaussian_common 2>/dev/null \
+  | awk -F'NImag=' '{n=$2+0; if(n>0) print $0}' \
+  | tee imag_logs_with_NImag.txt
+
+#“Kaç tane imaginary var?” say
+wc -l imag_files.txt
