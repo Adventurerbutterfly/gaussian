@@ -24,6 +24,10 @@ if [ ! -f "$SBATCH" ]; then
   echo "[ERR] sbatch script not found: $SBATCH"
   exit 1
 fi
+if [ ! -f finalize_apply_or_qrc.sbatch ]; then
+  echo "[ERR] finalize_apply_or_qrc.sbatch not found (final step is required)."
+  exit 1
+fi
 
 mkdir -p "$OUTROOT"
 : > "$JOBLIST"
@@ -148,3 +152,21 @@ echo "[STEP2] Submit reopt array with max-parallel=%$PARALLEL"
 RID=$(sbatch --parsable --array=1-"$N"%${PARALLEL} "$SBATCH" "$JOBLIST")
 echo "[OK] Submitted reopt array JOBID=$RID"
 echo "$RID" > reopt_array_jobid.txt
+
+echo "[STEP3] Submit FINALIZE (auto) afterany:$RID"
+FID=$(sbatch --parsable --dependency=afterany:$RID finalize_apply_or_qrc.sbatch)
+echo "[OK] Submitted FINALIZE JOBID=$FID"
+echo "$FID" > finalize_jobid.txt
+
+echo
+echo "[DONE]"
+echo "  REOPT array : $RID"
+echo "  FINALIZE    : $FID"
+
+
+
+     
+      
+
+ 
+  
