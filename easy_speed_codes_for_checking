@@ -5,3 +5,34 @@ grep -R --include="*.log" -n "NImag=" gaussian_HA gaussian_Aminus gaussian_commo
 
 #“Kaç tane imaginary var?” say
 wc -l imag_files.txt
+
+
+
+
+
+#Bu, pka_skipped.csv içindeki tüm missing kayıtlarını, hangi molekülde ve hangi beklenen path için olduğunu tek tek çıkarır:
+cd /cta/users/modellab/workspace/nilsu/TUBITAK/carboxylic_acids_from_PubChem
+
+python3 - <<'PY'
+import csv
+
+with open("pka_skipped.csv", newline="", encoding="utf-8") as f:
+    rows = list(csv.DictReader(f))
+
+for row in rows:
+    name = row.get("name", row.get("mol_key", "UNKNOWN"))
+    printed = False
+    for k, v in row.items():
+        if v.strip() == "missing":
+            base = k[:-7] if k.endswith("_reason") else k
+            path = row.get(base + "_path", "")
+            source = row.get(base + "_source", "")
+            if not printed:
+                print(f"\n=== {name} ===")
+                printed = True
+            print(f"{k}: missing")
+            if source:
+                print(f"source: {source}")
+            if path:
+                print(f"path  : {path}")
+PY
