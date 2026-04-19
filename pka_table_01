@@ -1,0 +1,1 @@
+(head -n 1 pka_results.csv && tail -n +2 pka_results.csv | head -n 30) | column -s, -t | less
