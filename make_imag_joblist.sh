@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Tarama yapılacak kök klasörler
-DIRS=(gaussian_HA gaussian_Aminus gaussian_common)
+DIRS=(retry_inputs/freqonly)
 
 # Çıktı dosyaları
 OUT_LOGS="imag_logs.txt"
