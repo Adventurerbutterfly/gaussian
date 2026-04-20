@@ -1,1 +1,30 @@
 (head -n 1 pka_results.csv && tail -n +2 pka_results.csv | head -n 30) | column -s, -t | less
+
+python3 - <<'PY'
+import csv
+
+cols = ["name", "HA_CID", "A_CID", "ref_pka", "cycle", "direct", "H+lit"]
+
+with open("pka_results.csv", newline="", encoding="utf-8") as f:
+    rows = list(csv.DictReader(f))
+
+def fmt(v):
+    if v is None:
+        return ""
+    v = str(v)
+    try:
+        return f"{float(v):.2f}"
+    except:
+        return v
+
+rows30 = rows[:30]
+width = {}
+for c in cols:
+    width[c] = max(len(c), max((len(fmt(r.get(c, ""))) for r in rows30), default=0))
+
+print("  ".join(c.ljust(width[c]) for c in cols))
+print("  ".join("-" * width[c] for c in cols))
+
+for r in rows30:
+    print("  ".join(fmt(r.get(c, "")).ljust(width[c]) for c in cols))
+PY
