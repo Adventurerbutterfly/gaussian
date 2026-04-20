@@ -1,0 +1,3 @@
+ squeue -u $USER
+tail -f reopt_inputs/gaussian_HA/smd/867__Malonic_acid__HA_smd_water.log
+grep -n "Normal termination" reopt_inputs/gaussian_HA/smd/867__Malonic_acid__HA_smd_water.log
