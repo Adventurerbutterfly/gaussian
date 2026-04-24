@@ -1,15 +1,39 @@
-(head -n 1 pka_results.csv && tail -n +2 pka_results.csv | head -n 30) | column -s, -t | less
-
-
-python3 - <<'PY'
+python - <<'PY' > pka_minimal_table.txt
 import csv
 
-with open("pka_results.csv", newline="", encoding="utf-8") as f:
-    rows = list(csv.reader(f))
+with open("pka_results.csv", newline='', encoding="utf-8") as f:
+    rows = list(csv.DictReader(f))
 
-rows = rows[:15]
-widths = [max(len(row[i]) if i < len(row) else 0 for row in rows) for i in range(max(len(r) for r in rows))]
+cols = list(rows[0].keys())
 
-for row in rows:
-    print("  ".join((row[i] if i < len(row) else "").ljust(widths[i]) for i in range(len(widths))))
+wanted_keywords = ["cid", "name", "molecule", "pka", "nimag", "imag", "status", "comment", "note"]
+show_cols = []
+
+for c in cols:
+    cl = c.lower()
+    if any(w in cl for w in wanted_keywords):
+        show_cols.append(c)
+
+if not show_cols:
+    show_cols = cols[:8]
+
+def shorten(x, maxlen=18):
+    x = str(x)
+    return x if len(x) <= maxlen else x[:15] + "..."
+
+table = [show_cols]
+for r in rows:
+    table.append([shorten(r.get(c, "")) for c in show_cols])
+
+widths = [max(len(str(row[i])) for row in table) for i in range(len(show_cols))]
+
+for i, row in enumerate(table):
+    print(" | ".join(str(row[j]).ljust(widths[j]) for j in range(len(show_cols))))
+    if i == 0:
+        print("-+-".join("-" * w for w in widths))
+
+print()
+print(f"Total molecules/results: {len(rows)}")
 PY
+
+less -S pka_minimal_table.txt
